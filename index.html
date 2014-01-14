@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>abnerjs</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="resources/css/style.css" /> 
+</head>
+
+<body onload="bootstrap();">
+
+	<a id="tab-1" href="#home">Home</a>  <a id="tab-2" href="#about">About</a>
+        <br>
+	<div id="view"></div>
+
+<template id="home">
+	<h1 data-bind="title"></h1>
+	<input data-bind="hello" placeholder="Name" /> 
+	<br><br>
+	<button class="btn btn-primary" onclick="info('Hi '+ $scope.hello +'!', 'active alert alert-info');"> Send </button>	
+
+	<br><br>
+	<div id="messages" class="inactive"></div>
+	
+</template>
+
+<template id="about">
+	<h1>About</h1>
+	<p> Hi! I'm Abner Diaz, follow me on&nbsp;
+		<a href="https://abnerick.wordpress.com"><span>wordpress</span></a> 
+		&nbsp;
+		<a href="https://github.com/abnerick"><span class="icon-github"></span></a>
+		&nbsp;
+		<a href="https://twitter.com/abnerick"><span class="icon-twitter"></span></a>
+		
+		
+	</p>
+	<span data-bind="bye"></span> 
+</template>
+
+
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="resources/js/fallback.js"></script>
+<script src="resources/js/abner.min.js"></script>
+<script src="resources/js/app.js"></script>
+</body>
+</html>

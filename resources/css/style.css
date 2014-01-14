@@ -1,0 +1,16 @@
+body{
+	margin:2em;
+}
+
+template{
+	display:none;
+}
+
+
+active{
+	display:block;
+}
+inactive{
+	display:none;
+}
+
